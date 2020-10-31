@@ -1,6 +1,6 @@
 .priceList{
     display: block;
-    padding-top: 60px;
+    padding-top: 120px;
     &__wrapper{
         margin-top: 40px;
         padding: 0 60px;
@@ -16,7 +16,7 @@
         display: grid;
         grid-template: repeat(2, minmax(21px, auto)) / repeat(2, auto);
         row-gap: 5px;
-        padding-top: 10px;
+        padding-top: 13px;
         padding-left: 25px;        
         &:before {
             content: '';
@@ -25,7 +25,7 @@
             background-color: $main-color;
             border-radius: 50%;
             position: absolute;
-            top: 12px;
+            top: 16px;
         }
     }
     &__type{
@@ -33,6 +33,7 @@
         margin: 0;
     }
     &__count {
+        font-weight: bold;
         justify-self: end;
     }
     &__descr {
