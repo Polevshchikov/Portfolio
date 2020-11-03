@@ -6,7 +6,7 @@
     &__wrapper{
         margin-top: 60px;
         display: grid;
-        grid-template: repeat(2, minmax(280px, auto)) / repeat(4, 280px);
+        grid-template: repeat(2, 280px) / repeat(4, 280px);
         grid-auto-rows: minmax(280px, auto);
         gap: 5px;  
         .vertical{

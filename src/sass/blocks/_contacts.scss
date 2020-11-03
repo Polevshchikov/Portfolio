@@ -41,6 +41,8 @@
         grid-template: 45px 190px 45px / repeat(2, 280px);
         justify-content: space-between;
         row-gap: 28px;
+        position: relative;
+        z-index: 9;
         label{
             display: block;
             position: absolute;

@@ -329,7 +329,7 @@
         </div>
     </section>
 
-<!--     <section class="work">
+    <section class="work"> 
         <div class="container">
             <h2 class="title title_fz16 work__title title__section-title">Портфолио</h2>
             <div class="title title_fz36 work__subtitle">Мои работы</div>
@@ -355,9 +355,9 @@
                 </a>
             </div>
         </div>
-    </section> -->
+    </section> 
 
-<!--     <secton class="priceList">
+    <secton class="priceList">
         <div class="container">
             <h2 class="title title_fz16 work__title title__section-title">Прайс-лист</h2>
             <div class="divider"></div>
@@ -398,13 +398,17 @@
                 </div>
             </div>
         </div>
-    </secton> -->
+    </secton>
 
-<!--     <section class="contacts">
+    <section class="contacts">
         <div class="container">
             <div class="contacts__wrapper">
                 <div class="contacts__photo">
-                    <img src="img/main_photo.jpg" alt="Photo">
+                    <picture>
+                        <source media="(max-width: 991px)" srcset="img/main_photo-min.jpg">
+                        <source media="(min-width: 992px)" srcset="img/main_photo.jpg">
+                        <img src="img/main_photo.jpg" alt="Photo">
+                    </picture>
                 </div>
                 <div class="contacts__descr">
                     <h2 class="title title_fz16 contacts__title ">Контакты</h2>
@@ -451,7 +455,7 @@
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
 
     <script src="js/script.js"></script>
 </body>

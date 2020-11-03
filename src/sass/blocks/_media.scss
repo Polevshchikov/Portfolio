@@ -42,6 +42,27 @@
             row-gap: 30px;
         }
     }
+    .work{
+        &__wrapper{
+            grid-template-columns: repeat(auto-fit, 280px);
+            grid-auto-rows: 280px;
+            justify-content: space-around;
+            row-gap: 35px;
+            .horizonal, .vertical{
+                grid-row: unset;
+                grid-column: unset;
+            }
+        }
+    }
+    .contacts {
+        &__wrapper {
+            padding: 0;
+            grid-template-columns: 400px 520px;
+        }
+        &__form {
+            grid-template: 45px 190px 45px / repeat(2, 250px);
+        }
+    }
 }
 @media (max-width: 992px){
     .container{
@@ -93,6 +114,25 @@
             row-gap: 30px;
         }
     }
+    .priceList{
+        padding-top: 80px;
+        &__wrapper{
+            grid-template-columns: repeat(auto-fit, 340px);
+            justify-content: center;
+        }
+    }
+    .contacts {
+        &__wrapper {
+            grid-template-columns: 300px 400px;
+        }
+        &__form {
+            grid-template: 45px 190px 45px / repeat(2, 195px);
+        }
+        &__btn {
+            padding: 8px 25px;
+            line-height: 16px;
+        }
+    }
 }
 @media (max-width: 768px){
     .container{
@@ -142,8 +182,20 @@
             row-gap: 30px;
         }
     }
+    .contacts {
+        padding-top: 80px;
+        &__photo {
+            display: none;
+        }
+        &__wrapper {
+            grid-template-columns: 1fr;
+        }
+        &__form {
+            grid-template: 45px 190px 45px / repeat(2, 250px);
+        }
+    }
 }
-@media (max-width: 575px){
+@media (max-width: 576px){
     .container{
         max-width: 100%;
         padding: 0 20px;
@@ -186,6 +238,7 @@
         }
     }
     .resume{
+        padding-top: 80px;
         &__wrapper{
             padding: 40px 20px 0 20px;
             grid-template-columns: repeat(1, 1fr);
@@ -193,8 +246,9 @@
         }
     }
     .skills{
+        padding-top: 80px;
         .title_fz36 {
-            font-size: 22px;
+            font-size: 21px;
         }
         .divider{
             margin-top: 10px;
@@ -206,6 +260,47 @@
         &__ratings{
             grid-template-columns: repeat(1, 300px);
             row-gap: 30px;
+        }
+    }
+    .work{
+        padding-top: 80px;
+        .divider{
+            margin-top: 0;
+        }
+        &__wrapper{
+            margin-top: 35px;
+        }
+    }
+    .priceList{
+        &__wrapper{
+            grid-template-columns: repeat(auto-fit, 290px);
+
+        }
+    }
+    .contacts {
+        padding-bottom: 50px;
+        &__form {
+            grid-template: 45px 45px 190px minmax(45px, auto) / 1fr;
+        }
+        &__textarea {
+            grid-column: unset;
+            width: 100%;
+        }
+        &__triggers {
+            grid-column: unset;
+            grid-template-columns: 1fr;
+            column-gap: unset;
+            row-gap: 20px;
+        }
+        &__btn {
+            order: 2;
+            max-width: 220px;
+            margin: 0 auto;
+        }
+        &__policy {
+            width: 180px;
+            margin: 0 auto;
+            line-height: 18px;
         }
     }
 }
